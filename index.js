@@ -34,7 +34,7 @@ function shell({ e, next = null}) {
     });
     command.on('exit', code => {
         if(next) next();
-        else send('-----End-----');
+        else console.log('End');
     });
     return command;
 }
