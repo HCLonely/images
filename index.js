@@ -43,7 +43,7 @@ shell({
   e: 'git add .',
   next: () => {
     shell({
-      e: 'git commit -m "Update at '+dateFormat('YYYY-MM-DD HH:mm:ss'),
+      e: 'git commit -m "Update at '+dateFormat('YYYY-MM-DD HH:mm:ss')+'"',
       next: () => {
         shell({e: 'git push'})
       }
