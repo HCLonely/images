@@ -1,4 +1,4 @@
-i.fa-heartbeat {
+#heartbeat {
   color: #ff0000;
   animation: iconAnimate 1.33s ease-in-out infinite;
 }
