@@ -54,7 +54,7 @@ shell({
                 shell({
                   e: 'git commit -m "Update at ' + dateFormat('YYYY-MM-DD HH:mm:ss') + '"',
                   next: () => {
-                    shell({ e: 'git push' })
+                    shell({ e: 'git -c credential.helper= -c credential.helper=store push' })
                   }
                 })
               }
